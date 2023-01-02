@@ -5,7 +5,7 @@ EXPOSE 514/tcp
 
 VOLUME [ "/var/log", "/etc/rsyslog.d" ]
 
-RUN apk add --no-cache rsyslog 
+RUN apk add --no-cache tzdata rsyslog 
 
 ADD rsyslog.conf /etc/rsyslog.conf
 
